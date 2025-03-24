@@ -1,0 +1,120 @@
+.tableWrapper {
+  width: calc(100% + 64px);
+  margin-left: -64px;
+  padding-left: 64px;
+  overflow: auto;
+  min-height: 320px;
+}
+
+.table {
+  margin-left: -60px;
+  width: calc(100% + 60px);
+}
+
+@media (max-width: 1024px) {
+  .tableWrapper {
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .table {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.thead {
+}
+
+:is(.thead) .row {
+  vertical-align: top;
+  text-align: left;
+}
+
+:is(.thead) .cell {
+  padding-bottom: 44px;
+}
+
+.row {
+}
+
+.cell {
+  vertical-align: top;
+  padding: 16px 12px;
+
+  &:global(.rt-tr-align-left) {
+    text-align: left;
+  }
+
+  &:global(.rt-tr-align-right) {
+    text-align: right;
+  }
+}
+
+:is(.active.cellWithSort) {
+  color: var(--color-accent);
+}
+
+.cellWithSort {
+  display: flex;
+  cursor: default;
+
+  &.sort {
+    cursor: pointer;
+  }
+}
+
+.cellWithSort {
+  display: inline-flex;
+  cursor: default;
+
+  &.sort {
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+.cellWithSort.sort .cellHeadTitle > p:first-child {
+  padding-right: 20px;
+}
+
+.iconSort {
+  position: absolute;
+  right: 0;
+  top: -2px;
+}
+
+.tbody {
+}
+
+:is(.tbody) .row {
+  &.activeExpanderRow,
+  &:hover {
+    cursor: pointer;
+    background-color: var(--bg-secondary);
+
+    .expander {
+      opacity: 1;
+    }
+  }
+
+  &.activeExpanderRow + tr .childTable {
+    border: 4px solid var(--bg-secondary);
+  }
+}
+
+.childTable {
+}
+
+.expander {
+  opacity: 0;
+  transition: opacity var(--transition-default);
+}
+
+.nameLink {
+  color: var(--color-accent);
+  &:hover {
+    color: var(--color-accent-50);
+  }
+}

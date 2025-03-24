@@ -1,0 +1,11 @@
+.Author {}
+
+
+
+.Dark .Time {
+    color: var(--color-white-50);
+}
+
+.Light .Time {
+    color: var(--color-primary-50);
+}

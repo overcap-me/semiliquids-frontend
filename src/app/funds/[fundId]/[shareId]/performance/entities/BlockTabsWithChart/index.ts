@@ -1,0 +1,1 @@
+export { BlockTabsWithChart } from './BlockTabsWithChart'

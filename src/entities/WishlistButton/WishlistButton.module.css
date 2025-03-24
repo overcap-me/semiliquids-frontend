@@ -1,0 +1,38 @@
+.button {
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+}
+
+.regular {
+  padding: 6px 12px;
+  background-color: var(--color-white);
+  color: var(--color-accent);
+
+  &:hover {
+    /* background-color: var(--color-accent-25); */
+  }
+}
+
+.minimal {
+  padding: 4px; 
+}
+
+.minimal:hover {
+  background-color: var(--color-primary-8);
+}
+
+.icon {
+  display: flex;
+}
+
+.icon:not(:last-child) {
+  margin-right: 8px;
+}
+
+
+/* background-color for button */
+
+.accent8 {
+  background-color: var(--color-accent-8);
+}

@@ -1,0 +1,23 @@
+.Block {
+  width: calc(25% - 24px);
+}
+
+.Body {
+  position: sticky;
+  top: calc(50px + 64px);
+}
+
+.Item {
+  padding-left: 16px;
+  --incide--button-color: var(--color-active);
+}
+
+.Item:is(.Sub) {
+  padding-left: calc(16px * 2);
+}
+
+@media screen and (max-width: 1024px) {
+  .Block {
+    display: none;
+  }
+}

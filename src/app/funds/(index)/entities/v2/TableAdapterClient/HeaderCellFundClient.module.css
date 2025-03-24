@@ -1,0 +1,13 @@
+.cellBlockMainHeader {
+  width: 200px;
+}
+
+.cellBlockClassName {
+  width: 100px;
+}
+
+.cellWithArrowPrev {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

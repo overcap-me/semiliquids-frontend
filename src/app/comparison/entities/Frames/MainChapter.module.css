@@ -1,0 +1,29 @@
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.remove {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  padding: 4px;
+  border-radius: var(--border-radius);
+}
+
+.remove:hover {
+  background-color: var(--color-error-8);
+}
+
+.wishlist {
+  &:hover {
+    background-color: var(--color-accent-25);
+  }
+}

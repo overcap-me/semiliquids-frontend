@@ -1,0 +1,136 @@
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FormWrapper {
+  padding: calc(var(--space--m) + var(--space--xxs))
+    calc(var(--space--m) + var(--space--xxs)) calc(30 * var(--space--unit));
+  background-color: var(--color-white);
+  max-width: 608px;
+  min-width: 480px;
+  margin: 0 auto;
+  font-family: var(--font-manrope);
+  color: var(--color-primary-70);
+}
+
+.Form {
+  margin-bottom: var(--space--sm);
+}
+
+.Form:last-child {
+  margin: 0;
+}
+
+.Separate {
+  margin: 20px 0 16px;
+}
+
+.Separate:first-child {
+  margin-top: 0;
+}
+
+.Body {
+}
+
+.Field {
+  width: 100%;
+}
+
+.Label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.Error {
+  margin: 8px 0;
+}
+
+.Error:last-child {
+  margin-bottom: 0;
+}
+
+.Input {
+  width: 100%;
+  display: block;
+  height: 48px;
+  border: 1px solid var(--color-primary-50);
+  border-radius: 2px;
+  padding: 12px;
+}
+
+.Input.hasError {
+  border-color: var(--color-error);
+}
+
+.InputIcon {
+  position: absolute;
+  right: 12px;
+  display: flex;
+}
+
+.InputIcon.Visible svg {
+  stroke: var(--color-accent);
+}
+
+.InputIcon svg {
+  stroke: var(--color-primary-70);
+}
+
+.InputIcon:hover svg {
+  stroke: var(--color-accent);
+}
+
+.Caption {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space--xxs);
+}
+
+.Button {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  padding: 18px 75px;
+  letter-spacing: 0.02em;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.Button__LN {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-linkend);
+  transition: background-color var(--transition-default) !important;
+}
+
+.Button__LN:hover {
+  background-color: var(--color-accent);
+}
+
+.Button__Icon {
+  margin-right: 20px;
+}
+
+.Button__Icon path {
+  fill: var(--color-white);
+}
+
+@media screen and (max-width: 640px) {
+  .FormWrapper {
+    padding: calc(var(--space--m) + var(--space--xxs)) 20px
+      calc(30 * var(--space--unit));
+    min-width: 280px;
+  }
+
+  .Button {
+    padding: 14px 16px;
+    width: 100%;
+    justify-content: center;
+  }
+}

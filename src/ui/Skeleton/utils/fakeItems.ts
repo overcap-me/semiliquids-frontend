@@ -1,0 +1,1 @@
+export const items = Array.from({ length: 4 });

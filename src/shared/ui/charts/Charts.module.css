@@ -1,0 +1,9 @@
+.wrapper {
+  position: relative;
+  display: flex;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+}

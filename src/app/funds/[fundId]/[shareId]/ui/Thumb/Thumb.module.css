@@ -1,0 +1,28 @@
+.Thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 160px;
+}
+
+.Thumb__Desc {
+  margin-bottom: var(--space--xxs);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 640px) {
+  .Thumb {
+    flex-direction: row;
+    width: 100%;
+    min-width: inherit;
+  }
+  .Thumb__Desc {
+    min-width: 160px;
+    margin-right: 8px;
+  }
+}

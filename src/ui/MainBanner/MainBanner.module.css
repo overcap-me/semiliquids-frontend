@@ -1,0 +1,16 @@
+.banner {
+  min-height: 140px;
+}
+
+.Card {
+}
+
+.Primary {
+}
+
+.Default {
+  padding: var(--space--xl) 0;
+}
+
+.Minimal {
+}

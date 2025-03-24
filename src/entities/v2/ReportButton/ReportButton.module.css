@@ -1,0 +1,12 @@
+/* TODO: Probably should use common button styles */
+
+.button {
+  border-radius: var(--border-radius);
+  padding: 4px;
+  display: inline-flex;
+  /* align-items: center; */
+}
+
+.button:hover {
+  background-color: var(--color-primary-8);
+}

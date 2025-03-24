@@ -1,0 +1,37 @@
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.button {
+  display: flex;
+  position: relative;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.button:hover {
+  background-color: var(--color-primary-8);
+}
+
+:is(.compare) svg {
+  stroke: var(--color-accent);
+}
+
+:is(.compare):hover svg {
+  fill: var(--color-accent);
+}
+
+:is(.compare.active) svg {
+  stroke: var(--color-primary);
+  fill: var(--color-primary-70);
+}
+
+.wishlist {
+}
+
+.cellWithArrowNext {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

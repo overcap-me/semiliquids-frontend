@@ -1,0 +1,14 @@
+.Heading_1 {
+  height: var(--font-size-xxl);
+  margin-bottom: 24px;
+}
+
+.Heading_2 {
+  height: var(--font-size-xl);
+  margin-bottom: 24px;
+}
+
+.Text {
+  height: var(--font-size-default);
+  margin-bottom: 24px;
+}

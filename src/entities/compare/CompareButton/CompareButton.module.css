@@ -1,0 +1,50 @@
+.compare {
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+}
+
+.regular {
+  padding: 6px 12px;
+  background-color: var(--color-white);
+  color: var(--color-accent);
+}
+
+.regular:hover {
+  .icon svg {
+    stroke: var(--color-accent);
+    fill: var(--color-accent);
+  }
+}
+
+.minimal {
+  padding: 4px; 
+}
+
+.minimal:hover {
+  background-color: var(--color-primary-8);
+
+  .icon svg {
+    stroke: var(--color-primary);
+    fill: var(--color-primary);
+  }
+}
+
+:is(.minimal.active, .regular.active) {
+  .icon svg {
+    stroke: var(--color-accent);
+    fill: var(--color-accent);
+  }
+}
+
+.icon { 
+  display: flex;
+}
+
+.icon svg {
+  stroke: var(--color-accent);
+}
+
+.icon:not(:last-child) {
+  margin-right: 8px;
+}

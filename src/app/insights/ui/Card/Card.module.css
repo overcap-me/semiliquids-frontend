@@ -1,0 +1,66 @@
+.Link {
+  display: flex;
+  flex-direction: column;
+}
+
+.Link:hover .Image {
+  transform: scale(1.1);
+}
+
+.Link:hover .Title {
+  color: var(--color-active);
+}
+
+.Card {
+}
+
+@media screen and (min-width: 641px) {
+  .Card.Large {
+    grid-column: span 2;
+  }
+}
+
+.ImageWrapper {
+}
+
+.Picture {
+  margin-bottom: var(--space--xs);
+  height: 240px;
+  overflow: hidden;
+}
+
+.Image {
+  object-position: center;
+  object-fit: cover;
+  transition: transform var(--transition-default);
+}
+
+.Title {
+  transition: color var(--transition-default);
+}
+
+.Body {
+}
+
+.Card.Primary {
+  display: flex;
+  align-items: center;
+}
+
+.Card.Primary .Picture {
+  margin-bottom: 0;
+  max-width: 33%;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 640px) {
+  .Card.Primary {
+    flex-wrap: wrap;
+  }
+
+  .Card.Primary .Picture {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}

@@ -1,0 +1,24 @@
+.Block {
+  overflow: auto;
+}
+
+.row {}
+
+.cell {
+  padding: var(--space--sm) calc(2.5 * var(--space--unit));
+  vertical-align: top;
+
+  &:global(.rt-tr-align-left) {
+    text-align: left;
+  }
+
+  &:global(.rt-tr-align-right) {
+    text-align: right;
+  }
+}
+
+.cell:is(th) {
+  vertical-align: top;
+  padding: 0 calc(2.5 * var(--space--unit)) var(--space--sm);
+  border-bottom: 1px solid var(--color-primary-20);
+}

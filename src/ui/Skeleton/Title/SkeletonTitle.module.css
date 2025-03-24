@@ -1,0 +1,4 @@
+.title {
+  height: var(--font-size-xxl);
+  margin-bottom: var(--space--sm);
+}

@@ -1,0 +1,75 @@
+.Block {
+  overflow: auto;
+}
+
+.tbody {
+  &:is([data-columns="2"]) {
+    .Cell:is(td) {
+      width: calc(100% / 2);
+    }
+  }
+  &:is([data-columns="3"]) {
+    .Cell:is(td) {
+      width: calc(100% / 3);
+    }
+  }
+}
+
+.cellMonthlyReport {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+
+.Cell {
+  padding: 12px 26px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.Cell:is(td) {}
+
+.Cell:is(th) {
+  padding-left: 0;
+  width: 180px;
+}
+
+.Cell:is(th):not([colSpan]) {
+  position: sticky;
+  background: var(--color-white);
+  left: 0;
+  z-index: 1;
+}
+
+.Cell:is(th[colSpan]) {
+  padding-top: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-primary-20);
+}
+
+.Remove {
+  display: flex;
+}
+
+.Desc {
+  max-width: calc(100% - 32px);
+}
+
+
+.Remove button {
+  display: flex;
+  margin-left: 8px;
+}
+
+.Remove button:disabled {
+  cursor: no-drop;
+}
+
+.Remove button:disabled svg {
+  stroke: var(--color-primary-50);
+}
+
+.Remove svg {
+  stroke: var(--color-error);
+}

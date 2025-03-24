@@ -1,0 +1,14 @@
+.PictureContainer {
+  margin-top: calc(var(--space-super--4xl) * -1 - 50px);
+  margin-bottom: var(--space--xxxl);
+}
+
+.Picture {
+  width: 100%;
+  height: 100%;
+}
+
+.Image {
+  object-fit: cover;
+  object-position: center;
+}

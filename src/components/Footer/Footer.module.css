@@ -1,0 +1,38 @@
+.Footer {
+  padding: calc(14 * var(--space--unit)) 0 var(--space--xxl) 0;
+  background-color: var(--bg-secondary);
+}
+
+.gap {
+  gap: var(--space--xl);
+}
+
+@media (max-width: 640px) {
+  .gap {
+    gap: var(--space--m);
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space--xs);
+}
+
+.col[data-col-span='2'] {
+  grid-column: span 2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col[data-col-span='2'] a {
+  width: calc(50% - var(--space--xl));
+}
+
+@media (max-width: 640px) {
+  .col[data-col-span='2'] a {
+    width: calc(50% - var(--space--m));
+  }
+}

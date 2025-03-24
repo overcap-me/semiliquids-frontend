@@ -1,0 +1,29 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space--smm);
+}
+
+.arrowRight {
+  margin-left: 8px;
+
+  transition: transform var(--transition-default);
+}
+
+.arrowRight path {
+  stroke: var(--color-white);
+}
+
+.breadcrumb {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb:hover .arrowRight {
+  transform: translateX(2px);
+}
+
+.breadcrumb:last-child {
+  margin-right: 0;
+}

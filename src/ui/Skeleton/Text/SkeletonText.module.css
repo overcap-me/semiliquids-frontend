@@ -1,0 +1,4 @@
+.text {
+  height: var(--font-size-default);
+  margin-bottom: var(--space--sm);
+}

@@ -1,0 +1,60 @@
+.Wrapper {
+    width: 86vw;
+    margin: 0 auto;
+}
+
+.Narrow {
+    width: calc(60%);
+    max-width: 680px;
+}
+
+.Large.Narrow {
+    width: calc(75% - 24px);
+    max-width: 924px;
+}
+
+.ExtraLarge.Narrow {
+    width: 90%;
+    max-width: 1120px;
+}
+
+@media screen and (min-width: 1720px) {
+    .Wrapper {
+        width: 86vw;
+        max-width: 1440px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Narrow {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .Wrapper {
+        width: calc(100% - 32px);
+    }
+
+    .Narrow {
+        width: 100%;
+    }
+
+    .Large.Narrow {
+        width: calc(100%);
+    }
+}
+
+
+.Primary {
+    background-color: var(--bg-primary);
+    color: var(--color-white);
+}
+
+.Secondary {
+    background-color: var(--bg-secondary);
+}
+
+.Navigation {
+    background-color: var(--bg-navigation-blog);
+}

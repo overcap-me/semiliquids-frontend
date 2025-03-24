@@ -1,0 +1,21 @@
+.Button {
+    display: flex;
+    align-items: center;
+    max-width: 340px;
+    justify-content: space-between;
+}
+
+.Button__Icon {
+    margin-right: 24px;
+}
+
+.Button__Body {
+    display: flex;
+    align-items: center;
+}
+
+.Button__Desc {
+    
+}
+
+.Button__Action {}

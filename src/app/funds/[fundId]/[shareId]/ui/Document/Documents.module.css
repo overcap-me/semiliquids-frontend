@@ -1,0 +1,81 @@
+.Documents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Document {
+  width: calc(25% - var(--space--sm));
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Document:hover .Document__Icon::before {
+  transform: scale(.9);
+}
+
+.Document__Icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: var(--space--xs);
+}
+
+.Document__Icon::before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  border-radius: 50%;
+  background-color: var(--bg-primary);
+  z-index: -1;
+  transition: transform var(--transition-default);
+}
+
+.Document__Desc {
+  width: calc(100% - 60px);
+}
+
+.Document__Title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1024px) {
+  .Document {
+    width: calc(33% - var(--space--sm));
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .Document {
+    width: calc(50% - var(--space--sm));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Document {
+    width: calc(100%);
+  }
+}
+
+.accordionHeader {
+  margin-left: calc(40px + var(--space--xs));
+  position: relative;
+  
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: var(--color-primary-50);
+    transition: transform var(--transition-default);
+  }
+
+  &:hover::before {
+    transform: scale(.9);
+  }
+} 

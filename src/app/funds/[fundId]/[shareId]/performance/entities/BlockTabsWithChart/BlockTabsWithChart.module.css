@@ -1,0 +1,8 @@
+.tabs {
+}
+
+.tab {
+  &:hover {
+    color: var(--color-primary);
+  }
+}

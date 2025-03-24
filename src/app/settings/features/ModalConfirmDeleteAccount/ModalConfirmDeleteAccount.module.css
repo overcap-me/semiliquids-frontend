@@ -1,0 +1,45 @@
+.Dialog {
+  margin: auto;
+  border: none;
+  color: var(--color-primary);
+}
+
+.Dialog:not([open]) {
+  opacity: 0;
+}
+
+.Dialog[open] {
+  opacity: 1;
+}
+
+.Dialog::backdrop {
+  background-color: var(--color-primary-70);
+}
+
+.Body {
+  max-width: 608px;
+  padding: calc(var(--space--m) + var(--space--xxs))
+    calc(var(--space--m) + var(--space--xxs)) var(--space--xl);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Confirm {
+  background-color: var(--color-error) !important;
+  color: var(--color-white);
+  margin-bottom: var(--space--sm);
+}
+
+@media screen and (max-width: 640px) {
+  .Body {
+    padding: calc(var(--space--m) + var(--space--xxs)) calc(var(--space--sm))
+      var(--space--xl);
+  }
+
+  .Confirm {
+    width: 100%;
+    padding: 18px 16px;
+  }
+}

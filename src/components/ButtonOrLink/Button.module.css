@@ -1,0 +1,201 @@
+.Button {
+  position: relative;
+  transition: color var(--transition-default), background-color var(--transition-default);
+}
+
+.Button:hover::before {
+  opacity: 1;
+}
+
+
+.Button[type="submit"] {
+  padding: 18px 75px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: var(--color-white);
+  background-color: var(--color-accent);
+  transition: background-color var(--transition-default);
+}
+
+.Button[type="submit"]:hover {
+  background-color: var(--color-hover);
+}
+
+.Point__Bottom {
+  margin-bottom: calc(2.5 * var(--space--unit));
+  /* 10 px */
+  padding-bottom: 4px;
+}
+
+.Point__Bottom::before {
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  margin: 0 auto;
+  background-color: var(--incide--button-color);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity var(--transition-default);
+}
+
+.Point__Left {
+  padding-left: 16px;
+}
+
+
+.Point__Left::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--incide--button-color);
+  opacity: 0;
+  transition: opacity var(--transition-default);
+}
+
+.Selected::before {
+  background-color: var(--incide--button-color);
+  opacity: 1;
+}
+
+
+.Underline__Bottom::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 1px;
+  background-color: var(--incide--button-color);
+  transition: transform var(--transition-default);
+}
+
+.Underline__Bottom:hover::before {
+  transform: scale(.9);
+}
+
+.Active {
+  --incide--button-color: var(--color-hover);
+}
+
+.Active:hover {
+  --incide--button-color: var(--color-hover);
+}
+
+.Active.Selected {
+  --incide--button-color: var(--color-active);
+}
+
+.Accent_50 {
+  --incide--button-color: var(--color-accent-50);
+  color: var(--color-accent-50);
+}
+
+.Accent {
+  --incide--button-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.Primary {
+  color: var(--color-primary);
+}
+
+.Primary:hover {
+  color: var(--color-hover);
+}
+
+.Primary_50 {
+  color: var(--color-primary-50);
+}
+
+.Primary_50:hover {
+  color: var(--color-accent);
+}
+
+.Primary_70 {
+  color: var(--color-primary-70);
+}
+
+.Primary_70.Selected {
+  color: var(--color-primary);
+}
+
+.Primary_70:hover {
+  color: var(--color-primary);
+}
+
+.White {
+  --incide--button-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.White.Selected {
+  --incide--button-color: var(--color-white);
+  color: var(--color-white);
+}
+
+
+.White_50 {
+  color: var(--color-white-50);
+}
+
+.White_50:hover {
+  color: var(--color-white);
+}
+
+.White_50.Selected {
+  color: var(--color-white);
+  --incide--button-color: var(--color-active)
+}
+
+.Pink {
+  color: var(--color-pink);
+}
+
+.Pink svg {
+  stroke: var(--color-pink);
+}
+
+.Error {
+  color: var(--color-error);
+}
+
+.Error svg {
+  stroke: var(--color-error);
+}
+
+
+/*Mode*/
+.ArrowRight {
+  transition: transform var(--transition-default);
+}
+
+.ArrowRight:hover {
+  transform: translateX(4px);
+}
+
+.ArrowLeft {
+  transition: transform var(--transition-default);
+}
+
+.ArrowLeft:hover {
+  transform: translateX(-4px);
+}
+
+@media screen and (max-width: 640px) {
+  .Button[type="submit"] {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,7 @@
+.Desc {
+    margin-bottom: calc(14 * var(--space--unit));
+}
+
+.Body {
+    padding: 0 32px;
+}

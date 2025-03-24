@@ -1,0 +1,17 @@
+.Block {
+  max-width: 550px;
+}
+
+.Body {}
+
+.Button {
+  padding: 8.5px 12px;
+  border-radius: 2px;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  transition: background-color var(--transition-default) !important;
+}
+
+.Button:hover {
+  background-color: var(--color-hover);
+}

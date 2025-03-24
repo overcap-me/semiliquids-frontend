@@ -1,0 +1,28 @@
+html,
+body {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-manrope);
+  font-size: var(--font-size-default);
+  color: var(--color-primary);
+}
+
+ul li {
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 16px;
+}
+
+ul li::before {
+  position: absolute;
+  top: 10px;
+  content: '';
+  left: 8px;
+  height: 2px;
+  width: 16px;
+  background-color: var(--color-accent);
+}
+
+/* @import url('./components/table.css'); */

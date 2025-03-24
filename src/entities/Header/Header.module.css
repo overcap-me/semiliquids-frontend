@@ -1,0 +1,30 @@
+.Header {
+  /* position: sticky;
+    top: 0; */
+  /* z-index: 10; */
+  padding: 36px 0;
+  background-color: var(--bg-primary);
+  color: var(--color-white);
+}
+
+.Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+}
+
+.dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-active);
+  margin: 4px;
+}
+
+.subtitle {
+  color: var(--color-white-80);
+}

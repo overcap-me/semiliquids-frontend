@@ -1,0 +1,1 @@
+export { UserChangeFullName } from "./UserChangeFullName";

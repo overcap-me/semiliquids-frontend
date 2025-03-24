@@ -1,0 +1,68 @@
+table {
+  width: 100%;
+  overflow: auto;
+
+  margin-bottom: var(--space--xxl);
+  font-family: var(--font-manrope);
+}
+
+table:not(:first-child) {
+  margin-top: calc(8 * var(--space--unit));
+}
+
+table:last-of-type {
+  margin-bottom: 0;
+}
+
+table tbody {
+  width: 100%;
+  max-width: 100%;
+}
+
+table td {
+  text-align: left;
+  padding: var(--space--sm) calc(2.5 * var(--space--unit));
+  /* 24px 10px */
+  min-width: 60px;
+  vertical-align: top;
+}
+
+table th {
+  text-align: center;
+  letter-spacing: 0.02em;
+  min-width: 60px;
+}
+
+table thead th {
+  padding: 0 calc(2.5 * var(--space--unit)) var(--space--sm);
+  text-align: center;
+  border-bottom: 1px solid var(--color-primary-20);
+  vertical-align: top;
+}
+
+table tbody th {
+  padding: var(--space--sm) calc(2.5 * var(--space--unit));
+  /* 24px 10px */
+}
+
+table tbody tr td:first-child {
+  text-align: left;
+}
+
+table tbody tr td:not(:first-child) {
+  text-align: right;
+}
+
+table tbody tr:last-of-type {
+  margin-bottom: 0;
+}
+
+table caption {
+  font-size: var(--font-size-xxs);
+  caption-side: bottom;
+  margin-top: var(--space--xxl);
+  text-align: left;
+  color: var(--color-primary-50);
+  font-family: var(--font-manrope);
+  line-height: 16px;
+}

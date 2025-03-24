@@ -1,0 +1,33 @@
+.Accordion {}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.WrapperIcon {
+    margin-left: 4px;
+    display: inline-flex;
+
+    &[hidden] {
+        display: none;
+    }
+}
+
+.Icon {
+    transform: rotate(-90deg);
+}
+
+.Icon.Active {
+    transform: rotate(90deg);
+}
+
+.Content {
+    transition: height var(--transition-default);
+    overflow: hidden;  
+}
+
+.Body {
+    padding-top: 24px;
+
+}

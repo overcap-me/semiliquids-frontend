@@ -1,0 +1,7 @@
+.remove {
+  --incide--button-color: var(--color-pink);
+
+  &::before {
+    left: calc(24px + 8px) !important;
+  }
+}

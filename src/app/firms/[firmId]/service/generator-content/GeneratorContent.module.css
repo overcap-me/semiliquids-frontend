@@ -1,0 +1,20 @@
+:is(ol.list) {
+  counter-reset: my-awesome-counter;
+}
+
+:is(ol.list) li {
+  padding-left: calc(12 * var(--space--unit));
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+
+:is(ol.list) li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: counter(my-awesome-counter) ". ";
+  color: var(--color-accent);
+  font-family: var(--font-frank-ruhl-libre);
+  font-size: var(--font-size-l);
+  font-weight: 500;
+}

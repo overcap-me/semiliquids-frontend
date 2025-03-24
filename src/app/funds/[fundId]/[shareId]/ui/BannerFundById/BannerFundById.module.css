@@ -1,0 +1,17 @@
+.actions {
+  align-items: flex-end;
+}
+
+.buttonWishlist {
+  &:hover {
+    background-color: var(--color-white);
+
+    & svg {
+      transform: translateX(2px);
+    }
+  }
+
+  & svg {
+    transition: transform var(--transition-default);
+  }
+}

@@ -1,0 +1,111 @@
+.Block {
+  margin-left: -44px;
+  overflow: auto;
+}
+
+.NotData {
+  margin-left: 44px;
+}
+
+.Table {}
+
+.Header .Cell {
+  padding: 0 14px 16px;
+  vertical-align: top;
+}
+
+.Header .Cell:first-child {
+  padding: 0 8px 16px;
+}
+
+.Header .Cell:not(:first-child, :last-child) {
+  text-align: left;
+}
+
+.Header .Cell:first-child {
+  text-align: right;
+}
+
+.Header .Cell:last-child {
+  text-align: left;
+}
+
+.Body {}
+
+.Row {
+  position: relative;
+  width: 100%;
+}
+
+.Body .Row:hover {
+  cursor: pointer;
+}
+
+.Body .Row:hover .Cell:first-child::before {
+  opacity: 1;
+}
+
+.Body .Row:hover .Cell:first-child {
+  color: var(--color-accent);
+}
+
+
+
+.Body .Row .Cell:first-child::before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  background-color: var(--bg-secondary);
+  z-index: -1;
+  opacity: 0;
+}
+
+.Body .Row .Cell:first-child {
+  padding: 16px 0 16px 12px;
+}
+
+.Body .Row .Cell:nth-child(2) {
+  padding: 16px 14px 16px 8px;
+}
+
+.Cell {
+  padding: 16px 14px;
+}
+
+.Body .Cell {
+  vertical-align: top;
+
+}
+
+.Body .Row.RowExpanderActive .Cell:first-child::before {
+  opacity: 1;
+}
+
+.Body .Row.RowExpanderActive+tr .SubRow {
+  border: 4px solid var(--bg-secondary);
+}
+
+@media screen and (max-width: 640px) {
+  .Block {
+    margin-left: 0;
+  }
+
+  .NotData {
+    margin-left: 0;
+  }
+}
+
+
+.Line {
+  position: relative;
+}
+
+.Line::before {
+  position: absolute;
+  content: '';
+  left: -14px;
+  right: -14px;
+  height: 1px;
+  bottom: 0;
+  background-color: var(--color-primary-20);
+}

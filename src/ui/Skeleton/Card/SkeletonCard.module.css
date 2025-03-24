@@ -1,0 +1,47 @@
+.card {
+}
+
+.media {
+  height: 240px;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--space--xs);
+}
+
+.title {
+  width: 100%;
+  height: var(--font-size-l);
+}
+
+.desc {
+  width: 100%;
+  height: var(--font-size-m);
+}
+
+.card.primary {
+  display: flex;
+  align-items: center;
+}
+
+.card.primary .media {
+  margin-right: 40px;
+  width: 33%;
+}
+
+.card.primary .title {
+  height: var(--font-size-xxl);
+}
+
+.card.primary .desc {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .card.primary {
+    flex-wrap: wrap;
+  }
+
+  .card.primary .media {
+    width: 100%;
+    margin-right: 0;
+  }
+}

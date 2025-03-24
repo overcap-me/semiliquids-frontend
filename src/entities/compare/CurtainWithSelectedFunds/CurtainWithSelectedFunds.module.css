@@ -1,0 +1,77 @@
+.curtain {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 32px 0 42px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity var(--transition-default), transform 0.4s ease;
+}
+
+.curtainWrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr  min-content;
+  align-items: center;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.compareChips {
+}
+
+.compareChip {
+  padding: 4px 6px 4px 10px; 
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  max-width: 240px;
+  display: flex;
+  align-items: center;
+}
+
+.compareChip h6:first-child  {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.chipDesc {
+  
+}
+
+.chipIcon {
+  margin-left: 4px;
+  display: inline-flex;
+}
+
+.compareButton {
+  text-align: center;
+  background-color: var(--color-white);
+  color: var(--color-accent);
+  padding: 8px 16px;
+  min-width: 160px;
+
+}
+
+@media (max-width: 640px) {
+  .curtain {
+    padding: 16px 0 28px;
+  }
+
+  .curtainWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .compareChip {
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

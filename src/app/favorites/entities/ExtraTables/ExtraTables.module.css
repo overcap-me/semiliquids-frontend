@@ -1,0 +1,43 @@
+.Block {
+  padding: var(--space--xl) 0;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.Header .Cell {
+  text-align: left;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.Cell {
+  padding: 32px 12px;
+  vertical-align: top;
+
+  &:global(.rt-tr-align-left) {
+    text-align: left;
+  }
+
+  &:global(.rt-tr-align-right) {
+    text-align: right;
+  }
+}
+
+.Cell:first-child {
+  padding-left: 0;
+}
+
+.Cell:last-child {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .Block {
+    padding: var(--space--l) 0;
+    width: 90%;
+  }
+
+  .Cell {
+    padding: 16px;
+  }
+}

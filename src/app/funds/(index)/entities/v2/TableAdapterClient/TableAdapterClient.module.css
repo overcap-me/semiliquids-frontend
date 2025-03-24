@@ -1,0 +1,76 @@
+.tableWrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  min-height: 320px;
+}
+
+.table {
+  width: 100%;
+}
+
+.expandedButton {
+  display: flex;
+  margin-top: 16px;
+}
+
+.row {}
+
+.cell {
+  padding: 20px 12px;
+  vertical-align: top;
+
+  &:global(.rt-tr-align-left) {
+    text-align: left;
+  }
+
+  &:global(.rt-tr-align-right) {
+    text-align: right;
+  }
+}
+
+:is(.active.cellWithSort) {
+  color: var(--color-accent);
+}
+
+.cellWithSort {
+  display: inline-flex;
+  cursor: default;
+
+  &.sort {
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+.cellWithSort.sort .cellHeadTitle>p:first-child {
+  padding-right: 20px;
+}
+
+.iconSort {
+  position: absolute;
+  right: 0;
+}
+
+.thead {}
+
+:is(.thead) {
+  .cell.rt-tr-align-right {
+    text-align: right;
+  }
+
+  .cell.rt-tr-align-left {
+    text-align: left;
+  }
+}
+
+:is(.tbody) .row {
+  &:hover {
+    cursor: pointer;
+    background-color: var(--bg-secondary) !important;
+
+    .cell:first-child {
+      color: var(--color-accent);
+    }
+  }
+}

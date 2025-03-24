@@ -1,0 +1,50 @@
+.Content {}
+
+
+.Content>* {
+    margin-bottom: 24px;
+}
+
+.Content>*:last-child {
+    margin-bottom: 0;
+}
+
+.Content ul li {
+    margin-bottom: 24px;
+    padding-left: 44px;
+}
+
+.Content ul li::before {
+    top: 12px;
+}
+
+.Content picture {
+    margin: 64px 0 80px;
+}
+
+.BackgroundFull {
+  position: relative;
+}
+
+.BackgroundFull::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: calc(14vw / 2* -1);
+  width: calc(100vw);
+  z-index: -1;
+  background-color: var(--bg-secondary);
+}
+
+@media screen and (min-width: 1720px) {
+  .BackgroundFull::before {
+    left: calc((100vw - 1440px) / 2 * -1);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .BackgroundFull::before {
+    left: -16px;
+  }
+}

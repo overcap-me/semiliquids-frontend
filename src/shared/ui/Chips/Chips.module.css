@@ -1,0 +1,39 @@
+.chips {
+  cursor: pointer;
+  color: var(--color-primary);
+  background-color: var(--bg-secondary);
+}
+
+.chips:hover {
+  background-color: var(--color-hover-v2); 
+}
+
+.radio {
+  padding: 8px 12px;
+  border-radius: 48px;
+}
+
+.radio::before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  border-radius: 48px; 
+}
+
+.radio:hover::before {
+  border: 1px solid var(--color-primary-50);
+}
+
+.radio.active::before {
+  border: 2px solid var(--color-primary-70);
+}
+
+.multiple {
+  padding: 4px 6px;
+}
+
+.multiple.active {
+  color: var(--color-white);
+  background-color: var(--color-primary-70);
+}
+

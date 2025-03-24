@@ -1,0 +1,1 @@
+export { FundFirm, columnHeaderFundFirm } from './FundFirm'

@@ -1,0 +1,26 @@
+.Content ol {
+    counter-reset: my-awesome-counter;
+}
+
+.Content ol li {
+    padding-left: calc(12 * var(--space--unit));
+    counter-increment: my-awesome-counter;
+    position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+    .Content ol li {
+        padding-left: calc(8 * var(--space--unit));
+    }
+}
+
+.Content ol li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: counter(my-awesome-counter) ". ";
+    color: var(--color-accent);
+    font-family: var(--font-frank-ruhl-libre);
+    font-size: var(--font-size-l);
+    font-weight: 500;
+}

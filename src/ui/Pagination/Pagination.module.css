@@ -1,0 +1,12 @@
+.PaginationBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PaginationArrow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+

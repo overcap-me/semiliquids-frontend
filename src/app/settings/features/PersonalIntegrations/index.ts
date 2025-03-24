@@ -1,0 +1,1 @@
+export { PersonalIntegrations } from "./PersonalIntegrations";

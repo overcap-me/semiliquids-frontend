@@ -1,0 +1,70 @@
+.Block {
+  overflow: auto;
+}
+
+.Table {}
+
+.Header .Cell {
+  padding: 0 16px 48px;
+  vertical-align: top;
+
+}
+
+.Header .Cell:not(:first-child, :last-child) {
+  text-align: left;
+}
+
+.Header .Cell:first-child {
+  text-align: right;
+}
+
+.Header .Cell:last-child {
+  text-align: left;
+}
+
+.Body {}
+
+.Row {
+  position: relative;
+  width: 100%;
+}
+
+.Body .Row:hover {
+  cursor: pointer;
+}
+
+.Body .Row:hover .Cell:first-child::before {
+  opacity: 1;
+}
+
+.Body .Row .Cell:first-child {
+  transition: color var(--transition-default);
+}
+
+.Body .Row:hover .Cell:first-child {
+  color: var(--color-accent);
+}
+
+
+
+.Body .Row .Cell:first-child::before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  /* top: -6px;
+  bottom: -6px;
+  left: -12px;
+  right: -12px; */
+  background-color: var(--bg-secondary);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity var(--transition-default);
+}
+
+.Cell {
+  padding: 16px 16px;
+}
+
+.Body .Cell {
+  vertical-align: top;
+}

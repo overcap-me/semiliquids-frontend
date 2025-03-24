@@ -1,0 +1,26 @@
+@import url('../styles/reset.css');
+@import url('../styles/variables.css');
+@import url('../styles/typography.css');
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.react-tooltip {
+  padding: 8px 12px !important;
+  border-radius: 2px !important;
+  background: var(--color-primary-70) !important;
+  color: var(--color-white) !important;
+  white-space: nowrap;
+
+  font-size: var(--font-size-xs) !important;
+  font-weight: 500;
+  line-height: 1.35em;
+  letter-spacing: -0.01em;
+}

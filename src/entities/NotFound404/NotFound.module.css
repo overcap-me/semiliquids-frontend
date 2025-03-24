@@ -1,0 +1,11 @@
+.HeightFull {
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 244px - 104px);
+}
+
+.Button {
+  --incide--button-color: #8ca9ff;
+  color: var(--incide--button-color);
+  margin-top: 24px;
+}

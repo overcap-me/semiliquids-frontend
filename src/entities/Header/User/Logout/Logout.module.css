@@ -1,0 +1,9 @@
+.Button {
+  display: flex;
+  margin-left: 16px;
+  transition: transform var(--transition-default) !important;
+}
+
+.Button:hover {
+  transform: translateX(4px);
+}

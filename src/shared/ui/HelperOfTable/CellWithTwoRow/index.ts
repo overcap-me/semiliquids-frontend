@@ -1,0 +1,1 @@
+export { CellWithTwoRow } from './CellWithTwoRow'

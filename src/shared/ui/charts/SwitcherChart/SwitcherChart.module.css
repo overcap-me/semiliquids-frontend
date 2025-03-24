@@ -1,0 +1,11 @@
+.switcher {
+  display: flex;
+  align-items: center;
+}
+
+.round {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
