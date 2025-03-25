@@ -45,7 +45,7 @@ class UserActionsService {
       const result = await requester.get<WishlistResponseDTO>(
         "v2/user/wishlist",
         {
-          searchParams: standartSearchParams(params),
+          searchParams: params ? standartSearchParams(params) : new URLSearchParams(),
           next: { tags: [UserTags.WISHLIST] },
         }
       );
